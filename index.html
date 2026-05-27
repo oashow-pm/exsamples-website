@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google 試算表 AI 工作流：從加班恩佑到效率大師的逆襲</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts Noto Sans TC -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+    .text-glow {
+      text-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-violet-900 selection:text-violet-100">
+
+  <!-- TOP NAV -->
+  <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="bg-gradient-to-tr from-violet-600 to-indigo-600 text-white p-2.5 rounded-xl shadow-md shadow-indigo-950/50 flex items-center justify-center">
+          <i class="fa-solid fa-file-invoice-dollar text-lg"></i>
+        </div>
+        <div>
+          <span class="font-black text-slate-50 tracking-wider text-lg block leading-none">GYOZA AI BOX</span>
+          <span class="text-xs text-indigo-400 font-bold tracking-widest uppercase">Office Automation Series</span>
+        </div>
+      </div>
+      <nav class="hidden md:flex space-x-1">
+        <a href="#prologue" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-indigo-400 transition">序章情境</a>
+        <a href="#core-concept" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-indigo-400 transition">核心法則</a>
+        <a href="#units" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-indigo-400 transition">四大教學單元</a>
+        <a href="#simulator" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-indigo-400 transition">即時模擬器</a>
+      </nav>
+      <div>
+        <a href="#simulator" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-md shadow-indigo-950/50 transition-all hover:scale-[1.02] active:scale-95 inline-flex items-center gap-2">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> 立即動手模擬
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH BACKGROUND GRID -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 py-16 sm:py-24 border-b border-slate-900">
+    <!-- Grid decorative background -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-25"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Left: Copy & Actions -->
+        <div class="lg:col-span-7 text-left">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-indigo-950/80 text-indigo-400 border border-indigo-800/60 mb-6 uppercase tracking-widest animate-pulse">
+            <i class="fa-solid fa-bolt"></i> Google Sheets × Gemini AI 實戰教學
+          </span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-55 tracking-tight leading-none mb-6">
+            Google 試算表 AI 工作流：<br>
+            <span class="bg-gradient-to-r from-violet-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent text-glow">從加班恩佑到效率大師的逆襲</span>
+          </h1>
+          <p class="text-base sm:text-lg text-slate-400 leading-relaxed mb-8 max-w-xl">
+            每天有處理不完的 PRD、寫不完的 Test Case 與對齊不完的會議決議？不用複製貼上到手軟，教你打造一條龍式 AI 自動化辦公神器！
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#units" class="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-slate-950 px-8 py-4 rounded-xl font-bold transition-all shadow-lg inline-flex items-center justify-center gap-2 group">
+              開始學習教學單元 <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            <a href="#simulator" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 px-8 py-4 rounded-xl font-bold transition-all inline-flex items-center justify-center gap-2">
+              <i class="fa-solid fa-play text-indigo-400"></i> AI 實機效果模擬
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Image Placement with premium lighting -->
+        <div class="lg:col-span-5 relative mt-8 lg:mt-0">
+          <!-- Background Glow Effect -->
+          <div class="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-violet-600 to-indigo-600 opacity-30 blur-2xl animate-pulse"></div>
+          
+          <!-- Image Wrapper with Premium Card look -->
+          <div class="relative bg-slate-900 border-4 border-slate-800 rounded-3xl shadow-2xl overflow-hidden transform hover:scale-[1.01] transition-all duration-500 ring-1 ring-slate-800">
+            <img src="https://lh3.googleusercontent.com/d/1-vSIRPdc_qnULnt15VA1DqMQ0Wc45CTC" alt="Google 試算表 AI 工作流形象圖" class="w-full h-auto object-cover max-h-[420px]" onerror="this.onerror=null; this.src='1000046932.png';">
+          </div>
+
+          <!-- Creative Floating Badge -->
+          <div class="absolute -bottom-5 -left-5 bg-slate-900 border border-slate-800 p-4 rounded-2xl shadow-2xl flex items-center space-x-3 max-w-[220px]">
+            <div class="bg-amber-950/60 text-amber-400 w-10 h-10 rounded-xl flex items-center justify-center text-lg font-bold flex-shrink-0 border border-amber-800/30">
+              🔥
+            </div>
+            <div>
+              <span class="block text-[10px] text-slate-500 font-bold tracking-wider uppercase">恩佑大變身</span>
+              <span class="block text-xs font-black text-slate-200">試算表自動化解鎖</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARACTERS SECTION WITH ACTUAL AVATARS -->
+  <section id="prologue" class="py-16 bg-slate-950 border-b border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-100">故事主人翁</h2>
+        <p class="text-slate-500 mt-2">點擊卡片認識手把手教你脫胎換骨的職場角色</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Xiaobai Card with Custom Avatar -->
+        <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 flex items-start space-x-5 shadow-lg relative overflow-hidden group hover:border-indigo-500 transition-all duration-300">
+          <div class="absolute top-0 right-0 bg-amber-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl tracking-wider">
+            菜鳥助理
+          </div>
+          <img src="https://lh3.googleusercontent.com/d/1LhBj_sek9eR4AMVbrFVirEi_Frz3lBm2" alt="恩佑 Avatar" class="w-16 h-16 rounded-2xl object-cover shadow-inner flex-shrink-0 border border-slate-700" onerror="this.onerror=null; this.src='1000046935.png';">
+          <div>
+            <h3 class="text-lg font-black text-slate-100">菜鳥恩佑 (You)</h3>
+            <p class="text-xs text-amber-400 font-bold mt-0.5">產品助理兼測試助理</p>
+            <p class="text-sm text-slate-400 mt-3 leading-relaxed">
+              「剛進公司每天被會議紀錄、PRD需求與寫不完的測試案例逼到瘋狂加班。以為 AI 只能拿來聊些沒營養的八卦，完全不知道如何套用到工作流中...」
+            </p>
+          </div>
+        </div>
+
+        <!-- Dora Card with Custom Avatar (UPDATED!) -->
+        <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 flex items-start space-x-5 shadow-lg relative overflow-hidden group hover:border-violet-500 transition-all duration-300">
+          <div class="absolute top-0 right-0 bg-violet-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl tracking-wider">
+            資深 PM
+          </div>
+          <img src="https://lh3.googleusercontent.com/d/1CF9sZPP8ywHX7HAXX7u9RGCjQ6IRj4QW" alt="炫辰 Avatar" class="w-16 h-16 rounded-2xl object-cover shadow-inner flex-shrink-0 border border-slate-700" onerror="this.onerror=null; this.src='1000046934.png';">
+          <div>
+            <h3 class="text-lg font-black text-slate-100">高冷前輩 炫辰</h3>
+            <p class="text-xs text-violet-400 font-bold mt-0.5">產品設計兼專案大師</p>
+            <p class="text-sm text-slate-400 mt-3 leading-relaxed">
+              「外表冷血、吐槽一針見血，名言是『你腦子裝的是非結構化垃圾資料嗎？』。實際上心地善良、熱心助人，最不忍心看到無效率的加班，手握無數 Google AI 秘方。」
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogue box intro with avatars (UPDATED!) -->
+      <div class="max-w-4xl mx-auto mt-12 bg-indigo-950/30 rounded-2xl p-6 sm:p-8 border border-indigo-900/50">
+        <div class="flex items-center space-x-2 text-indigo-400 font-bold mb-4">
+          <i class="fa-solid fa-comments"></i> <span>炫辰 前輩的冷酷開場白</span>
+        </div>
+        <div class="space-y-4">
+          <div class="flex items-start space-x-3">
+            <img src="https://lh3.googleusercontent.com/d/1LhBj_sek9eR4AMVbrFVirEi_Frz3lBm2" alt="恩佑" class="w-10 h-10 rounded-full object-cover border border-slate-700 flex-shrink-0" onerror="this.onerror=null; this.src='1000046935.png';">
+            <div class="bg-slate-900 p-3.5 rounded-2xl rounded-tl-none border border-slate-800 text-sm leading-relaxed text-slate-300 shadow-sm">
+              「炫辰前輩……我今天又有三個會議紀錄要整理，主管還叫我生出新功能的 PRD，晚上還要寫 50 個測試案例，我是不是該直接睡在辦公室？」
+            </div>
+          </div>
+          <div class="flex items-start space-x-3 justify-end">
+            <div class="bg-violet-600 text-white p-3.5 rounded-2xl rounded-tr-none text-sm leading-relaxed shadow-md max-w-xl">
+              「睡公司？公司還要幫你付電費。別整天當肉眼搬運工。看好了，AI 不是拿來聊天的，是拿來當『流水線工人』的。我們今天就用 Google 試算表內建的 Gemini 函式，搭配試算表的表格特性，幫你打造一整套自動化工作流生成器。學不會的話，今天晚餐你請客。」
+            </div>
+            <img src="https://lh3.googleusercontent.com/d/1CF9sZPP8ywHX7HAXX7u9RGCjQ6IRj4QW" alt="炫辰" class="w-10 h-10 rounded-full object-cover border border-slate-700 flex-shrink-0" onerror="this.onerror=null; this.src='1000046934.png';">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE CONCEPT SECTION -->
+  <section id="core-concept" class="py-16 bg-slate-900/40 border-b border-slate-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-3xl font-black text-slate-100 tracking-tight text-glow">💡 跨越封鎖：炫辰 前輩的雙語夾擊法則</h2>
+        <p class="text-slate-400 mt-2">為什麼在試算表用中文直接問 Gemini 會出現「不支援此語言」？前輩告訴你神級破解法：</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-lg">
+          <div class="w-10 h-10 rounded-lg bg-red-950/60 text-red-400 border border-red-900/50 flex items-center justify-center font-bold mb-4">
+            <i class="fa-solid fa-ban text-lg"></i>
+          </div>
+          <h3 class="font-bold text-slate-100 mb-2">直接下中文指令？</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Google 試算表內建的 `=GEMINI()` 函式對中文指令審查極其嚴格，常常拋出 <span class="text-red-400 font-mono text-xs font-bold">"The language is not supported"</span> 的錯誤訊息，宣告失敗。
+          </p>
+        </div>
+
+        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-lg ring-2 ring-indigo-600 ring-offset-4 ring-offset-slate-950">
+          <div class="w-10 h-10 rounded-lg bg-emerald-950/60 text-emerald-400 border border-emerald-900/50 flex items-center justify-center font-bold mb-4">
+            <i class="fa-solid fa-shield-halved text-lg"></i>
+          </div>
+          <h3 class="font-bold text-slate-100 mb-2">雙語夾擊 (Bilingual) 法則</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            核心秘訣：**使用英文給定 AI 角色與任務結構，並利用 `&` 串接您的中文表格資料。最後強烈指令要求以繁體中文 (Traditional Chinese) 回覆！**
+          </p>
+        </div>
+
+        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-lg">
+          <div class="w-10 h-10 rounded-lg bg-violet-950/60 text-violet-400 border border-violet-900/50 flex items-center justify-center font-bold mb-4">
+            <i class="fa-solid fa-repeat text-lg"></i>
+          </div>
+          <h3 class="font-bold text-slate-100 mb-2">流暢的橫向流水線</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            利用 Google Sheets 的資料參照，後一格的指令可以引用前一格的生成結果，像接力棒一樣讓 AI 幫你層層遞進、深度加工，一格產出一片天。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUTORIAL MODULES -->
+  <section id="units" class="py-16 bg-slate-950 border-b border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-black text-slate-100">🛠️ 四大 AI 工作流生成器實戰</h2>
+        <p class="text-slate-400 mt-2">點擊下方單元，手把手帶你建置表單、下載公式並吸收前輩的實務心法</p>
+      </div>
+
+      <!-- Tabs Navigation -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10 border-b border-slate-900 pb-4 max-w-4xl mx-auto">
+        <button onclick="switchTab('prd-tab', this)" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-indigo-600 text-white shadow-md shadow-indigo-950/50 flex items-center gap-2">
+          <i class="fa-solid fa-compass-drafting"></i> PRD 需求生成器
+        </button>
+        <button onclick="switchTab('meeting-tab', this)" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-slate-200 flex items-center gap-2 border border-slate-800">
+          <i class="fa-solid fa-list-check"></i> 會議記錄整理器
+        </button>
+        <button onclick="switchTab('testcase-tab', this)" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-slate-200 flex items-center gap-2 border border-slate-800">
+          <i class="fa-solid fa-vial-circle-check"></i> Test Case 生成器
+        </button>
+        <button onclick="switchTab('copywrite-tab', this)" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-slate-200 flex items-center gap-2 border border-slate-800">
+          <i class="fa-solid fa-feather-pointed"></i> 文案與外部 RSS 導入
+        </button>
+      </div>
+
+      <!-- Tab Contents -->
+      <div id="tab-container" class="max-w-5xl mx-auto">
+        
+        <!-- MODULE 1: PRD GENERATOR -->
+        <div id="prd-tab" class="tab-content block space-y-8 animate-fade-in">
+          <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800">
+            <div class="flex items-center space-x-3 text-indigo-400 font-bold mb-3">
+              <img src="https://lh3.googleusercontent.com/d/1CF9sZPP8ywHX7HAXX7u9RGCjQ6IRj4QW" alt="炫辰" class="w-8 h-8 rounded-full object-cover border border-slate-700" onerror="this.onerror=null; this.src='1000046934.png';"> <span>炫辰 劇場 - 當主管拋出一個模糊的概念</span>
+            </div>
+            <p class="text-slate-300 leading-relaxed text-sm">
+              「主管常丟一句『我要做那個定時自動關閉的睡眠模式』，剩下的就要你自己通靈寫出 PRD、User Journey，甚至畫出系統流程邏輯。看你抓頭髮就快禿了。教你這一招，**橫向流程設計法**，讓 AI 先幫你跑 Happy Path 的用戶旅程，再轉成 PRD，最後自動產出極端情境 Edge Cases。你只要審查就好。」
+            </p>
+          </div>
+
+          <!-- Table Schema View -->
+          <div>
+            <h3 class="font-bold text-slate-100 text-lg mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-table text-indigo-400"></i> 1. 表格結構設計
+            </h3>
+            <div class="overflow-x-auto border border-slate-800 rounded-xl shadow-lg custom-scrollbar">
+              <table class="min-w-full divide-y divide-slate-800 text-sm">
+                <thead class="bg-slate-900">
+                  <tr>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">A 欄 (手動)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">B 欄 (🤖 AI)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">C 欄 (🤖 AI，參考 B)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">D 欄 (🤖 AI，參考 C)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">E 欄 (🤖 AI，參考 D)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800 bg-slate-900/40">
+                  <tr>
+                    <td class="px-4 py-4 font-mono text-slate-400">功能概念 (Idea)</td>
+                    <td class="px-4 py-4 font-mono text-indigo-400 font-semibold">用戶旅程 (User Journey)</td>
+                    <td class="px-4 py-4 font-mono text-indigo-400 font-semibold">PRD 需求初稿</td>
+                    <td class="px-4 py-4 font-mono text-indigo-400 font-semibold">流程設計 (Flow)</td>
+                    <td class="px-4 py-4 font-mono text-purple-400 font-semibold">流程漏洞檢視 (Edge Cases)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Formula & Copy Section -->
+          <div class="space-y-4">
+            <h3 class="font-bold text-slate-100 text-lg flex items-center gap-2">
+              <i class="fa-solid fa-code text-indigo-400"></i> 2. 雙語 Gemini 公式密技 (E2 漏洞檢視)
+            </h3>
+            <p class="text-sm text-slate-400">
+              在 E2 儲存格中輸入以下公式，它會讀取 D2 生成的流程設計，以資深 QA 的角度瘋狂挑戰並挑出系統漏洞：
+            </p>
+            <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-xs overflow-x-auto leading-relaxed border border-slate-800">
+              <div class="absolute right-4 top-4">
+                <button onclick="copyText(this.nextElementSibling.innerText, 'copy-prd')" id="copy-prd" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+                  <i class="fa-regular fa-copy"></i> 複製公式
+                </button>
+                <span class="hidden">=GEMINI("You are a strict QA Director and Senior Engineer. Review the designed Flow and System Logic to identify any hidden flaws, blind spots, or edge cases (e.g., network timeout, empty states, maximum limits).
+
+[Flow and System Logic]: " & D2 & "
+
+[Output Requirements]:
+1. List 3-4 potential 'Process Flaws or Vulnerabilities' (流程漏洞).
+2. For each flaw, provide a concrete 'Solution Suggestion' (解決建議).
+3. You MUST reply in Traditional Chinese (繁體中文) in a structured manner.")</span>
+              </div>
+              <pre><code class="text-emerald-400">=GEMINI</code>(<span class="text-yellow-300">"You are a strict QA Director and Senior Engineer. Review the designed Flow and System Logic to identify any hidden flaws, blind spots, or edge cases (e.g., network timeout, empty states, maximum limits).
+
+[Flow and System Logic]: "</span> & <span class="text-violet-400">D2</span> & <span class="text-yellow-300">"
+
+[Output Requirements]:
+1. List 3-4 potential 'Process Flaws or Vulnerabilities' (流程漏洞).
+2. For each flaw, provide a concrete 'Solution Suggestion' (解決建議).
+3. You MUST reply in Traditional Chinese (繁體中文) in a structured manner."</span>)</pre>
+            </div>
+          </div>
+
+          <!-- Dora Pro Tip -->
+          <div class="bg-indigo-950/30 border-l-4 border-indigo-500 p-4 rounded-r-xl">
+            <span class="font-bold text-indigo-400 text-sm flex items-center gap-1.5 mb-1"><i class="fa-solid fa-circle-exclamation"></i> 炫辰 前輩的私房話：</span>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              「E 欄這個『流程漏洞檢視』超級好用。我們在做功能規劃時，常會遺漏一些邊緣情況（像是網路斷訊、沒資料時的畫面、點擊上限等）。AI 扮演的惡魔裁判能幫你防範未然，在會審（Refinement）前幫你擋掉至少 80% 工程師對你的靈魂拷問！」
+            </p>
+          </div>
+        </div>
+
+        <!-- MODULE 2: MEETING ACTION ITEMS -->
+        <div id="meeting-tab" class="tab-content hidden space-y-8 animate-fade-in">
+          <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800">
+            <div class="flex items-center space-x-3 text-indigo-400 font-bold mb-3">
+              <img src="https://lh3.googleusercontent.com/d/1CF9sZPP8ywHX7HAXX7u9RGCjQ6IRj4QW" alt="炫辰" class="w-8 h-8 rounded-full object-cover border border-slate-700" onerror="this.onerror=null; this.src='1000046934.png';"> <span>炫辰 劇場 - 不要再聽兩個小時的錄音去寫紀錄了</span>
+            </div>
+            <p class="text-slate-300 leading-relaxed text-sm">
+              「開完兩小時的專案會，大家七嘴八舌講一堆幹話跟不知所云的推託。你要去聽錄音重抄對吧？拜託放過自己。把用語音轉出來的逐字稿直接整坨塞進試算表 B2 一格內。我們可以用 AI 當獵犬，一秒幫你抓出『誰要在什麼時候完成什麼事』。賴也賴不掉。」
+            </p>
+          </div>
+
+          <!-- Table Schema View -->
+          <div>
+            <h3 class="font-bold text-slate-100 text-lg mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-table text-indigo-400"></i> 1. 表格結構設計
+            </h3>
+            <div class="overflow-x-auto border border-slate-800 rounded-xl shadow-lg custom-scrollbar">
+              <table class="min-w-full divide-y divide-slate-800 text-sm">
+                <thead class="bg-slate-900">
+                  <tr>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">A 欄 (手動)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">B 欄 (手動)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">C 欄 (🤖 AI)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">D 欄 (🤖 AI，對應 C)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">E 欄 (🤖 AI，對應 C)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800 bg-slate-900/40">
+                  <tr>
+                    <td class="px-4 py-4 font-mono text-slate-400">會議基本資訊</td>
+                    <td class="px-4 py-4 font-mono text-slate-400">會議原始紀錄/逐字稿</td>
+                    <td class="px-4 py-4 font-mono text-indigo-400 font-semibold">待辦行動清單 (Action Items)</td>
+                    <td class="px-4 py-4 font-mono text-indigo-400 font-semibold">負責人 (Owner)</td>
+                    <td class="px-4 py-4 font-mono text-indigo-400 font-semibold">預計完成日 (Due Date)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Formula & Copy Section -->
+          <div class="space-y-4">
+            <h3 class="font-bold text-slate-100 text-lg flex items-center gap-2">
+              <i class="fa-solid fa-code text-indigo-400"></i> 2. 雙語 Gemini 公式密技 (D2 負責人追蹤)
+            </h3>
+            <p class="text-sm text-slate-400">
+              在 D2 儲存格中輸入以下公式，它會將會議原始逐字稿（B2）和剛剛 C2 生成出來的行動任務進行比對，自動鎖定每項任務的負責人名字：
+            </p>
+            <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-xs overflow-x-auto leading-relaxed border border-slate-800">
+              <div class="absolute right-4 top-4">
+                <button onclick="copyText(this.nextElementSibling.innerText, 'copy-meet')" id="copy-meet" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+                  <i class="fa-regular fa-copy"></i> 複製公式
+                </button>
+                <span class="hidden">=GEMINI("Based on the meeting minutes and the extracted action items, identify the 'Owner' (Person in charge) for each task.
+
+[Meeting Minutes]: " & B2 & "
+[Action Items]: " & C2 & "
+
+[Output Requirements]:
+1. Match the task numbers from the Action Items (e.g., 1. Name, 2. Name).
+2. If no specific person is mentioned, write '待確認' (To be confirmed).
+3. You MUST reply in Traditional Chinese (繁體中文) and list names only.")</span>
+              </div>
+              <pre><code class="text-emerald-400">=GEMINI</code>(<span class="text-yellow-300">"Based on the meeting minutes and the extracted action items, identify the 'Owner' (Person in charge) for each task.
+
+[Meeting Minutes]: "</span> & <span class="text-violet-400">B2</span> & <span class="text-yellow-300">"
+[Action Items]: "</span> & <span class="text-violet-400">C2</span> & <span class="text-yellow-300">"
+
+[Output Requirements]:
+1. Match the task numbers from the Action Items (e.g., 1. Name, 2. Name).
+2. If no specific person is mentioned, write '待確認' (To be confirmed).
+3. You MUST reply in Traditional Chinese (繁體中文) and list names only."</span>)</pre>
+            </div>
+          </div>
+
+          <!-- Dora Pro Tip -->
+          <div class="bg-indigo-950/30 border-l-4 border-indigo-500 p-4 rounded-r-xl">
+            <span class="font-bold text-indigo-400 text-sm flex items-center gap-1.5 mb-1"><i class="fa-solid fa-circle-exclamation"></i> 炫辰 前輩的私房話：</span>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              「開會時，如果能把當天的日期寫在 A 欄，並在 E2（預計完成日）的公式中加上 'Today is ' & A2 & ', please calculate the actual dates.'。AI 甚至能把口語的『下週五前』、『下月底』等模糊時間，自動換算成明確的年月日格式，省去翻行事曆對照的功夫！」
+            </p>
+          </div>
+        </div>
+
+        <!-- MODULE 3: TEST CASE GENERATOR -->
+        <div id="testcase-tab" class="tab-content hidden space-y-8 animate-fade-in">
+          <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800">
+            <div class="flex items-center space-x-3 text-indigo-400 font-bold mb-3">
+              <img src="https://lh3.googleusercontent.com/d/1CF9sZPP8ywHX7HAXX7u9RGCjQ6IRj4QW" alt="炫辰" class="w-8 h-8 rounded-full object-cover border border-slate-700" onerror="this.onerror=null; this.src='1000046934.png';"> <span>炫辰 劇場 - 體力活全部丟給 AI 是基本常識</span>
+            </div>
+            <p class="text-slate-300 leading-relaxed text-sm">
+              「寫 50 個測試案例，每次都要在那邊重複複製貼上『步驟一：點擊按鈕、步驟二：輸入數值』對吧？手指累，大腦更累。在試算表裡，我們只需把『測試範圍、目的、備註』丟給 AI，讓它幫我們一口氣橫向發想出具體的功能點，以及對應的正負向測試案例情境。別用蠻力。」
+            </p>
+          </div>
+
+          <!-- Table Schema View -->
+          <div>
+            <h3 class="font-bold text-slate-100 text-lg mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-table text-indigo-400"></i> 1. 表格結構設計
+            </h3>
+            <div class="overflow-x-auto border border-slate-800 rounded-xl shadow-lg custom-scrollbar">
+              <table class="min-w-full divide-y divide-slate-800 text-sm">
+                <thead class="bg-slate-900">
+                  <tr>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">A 欄 (手動)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">B 欄 (手動)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">C 欄 (手動)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">D 欄 (🤖 AI)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">E 欄 (🤖 AI，參考 D)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800 bg-slate-900/40">
+                  <tr>
+                    <td class="px-4 py-4 font-mono text-slate-400">測試範圍 (Scope)</td>
+                    <td class="px-4 py-4 font-mono text-slate-400">測試目的 (Purpose)</td>
+                    <td class="px-4 py-4 font-mono text-slate-400">測試備註 (Remarks)</td>
+                    <td class="px-4 py-4 font-mono text-indigo-400 font-semibold">功能點拆解 (Function)</td>
+                    <td class="px-4 py-4 font-mono text-indigo-400 font-semibold">測試情境 (Test Scenario)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Formula & Copy Section -->
+          <div class="space-y-4">
+            <h3 class="font-bold text-slate-100 text-lg flex items-center gap-2">
+              <i class="fa-solid fa-code text-indigo-400"></i> 2. 雙語 Gemini 公式密技 (E2 測試情境發想)
+            </h3>
+            <p class="text-sm text-slate-400">
+              在 E2 儲存格中輸入以下公式，它會綜合參考功能點與您的備註，自動列出必須測試的正向情境（正常操作）與負向情境（防呆與系統阻擋）：
+            </p>
+            <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-xs overflow-x-auto leading-relaxed border border-slate-800">
+              <div class="absolute right-4 top-4">
+                <button onclick="copyText(this.nextElementSibling.innerText, 'copy-tc')" id="copy-tc" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+                  <i class="fa-regular fa-copy"></i> 複製公式
+                </button>
+                <span class="hidden">=GEMINI("You are a professional QA engineer. Based on the function description and constraints, generate detailed test scenarios including positive and negative tests.
+
+[Function]: " & D2 & "
+[Constraints/Remarks]: " & C2 & "
+
+[Output Requirements]:
+1. Do not include summary, intro or outro text.
+2. You MUST reply in Traditional Chinese (繁體中文).")</span>
+              </div>
+              <pre><code class="text-emerald-400">=GEMINI</code>(<span class="text-yellow-300">"You are a professional QA engineer. Based on the function description and constraints, generate detailed test scenarios including positive and negative tests.
+
+[Function]: "</span> & <span class="text-violet-400">D2</span> & <span class="text-yellow-300">"
+[Constraints/Remarks]: "</span> & <span class="text-violet-400">C2</span> & <span class="text-yellow-300">"
+
+[Output Requirements]:
+1. Do not include summary, intro or outro text.
+2. You MUST reply in Traditional Chinese (繁體中文)."</span>)</pre>
+            </div>
+          </div>
+
+          <!-- Dora Pro Tip -->
+          <div class="bg-indigo-950/30 border-l-4 border-indigo-500 p-4 rounded-r-xl">
+            <span class="font-bold text-indigo-400 text-sm flex items-center gap-1.5 mb-1"><i class="fa-solid fa-circle-exclamation"></i> 炫辰 前輩的私房話：</span>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              「AI 寫出的測試案例（Test Scenario）覆蓋率通常可以達到 85% 以上。如果希望情境能自動向下在試算表展平成多列，可以研究搭配試算表內建的 `=TRANSPOSE(SPLIT(GEMINI(...), "換行符號"))` 來實現，這樣就連打字整理的工夫都完全省下了。」
+            </p>
+          </div>
+        </div>
+
+        <!-- MODULE 4: COPYWRITE & RSS -->
+        <div id="copywrite-tab" class="tab-content hidden space-y-8 animate-fade-in">
+          <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800">
+            <div class="flex items-center space-x-3 text-indigo-400 font-bold mb-3">
+              <img src="https://lh3.googleusercontent.com/d/1CF9sZPP8ywHX7HAXX7u9RGCjQ6IRj4QW" alt="炫辰" class="w-8 h-8 rounded-full object-cover border border-slate-700" onerror="this.onerror=null; this.src='1000046934.png';"> <span>炫辰 劇場 - 讓全世界最新的趨勢資訊自動流進你的表格</span>
+            </div>
+            <p class="text-slate-300 leading-relaxed text-sm">
+              「很多人知道可以叫 AI 寫文案，但不知道 AI 的靈感可以來自『自動爬蟲』。有些單一網頁防爬蟲很厲害，那我們就直接抓該媒體的 RSS 連結，這是公開的 XML 格式，幾乎不受阻擋！在 A2 貼上 RSS 網址，B2 就會自動吐出最新 5 篇內容，接著讓 Gemini 參考它，來寫你指定的社群文案。完美的 RAG 輕量化辦公室實踐！」
+            </p>
+          </div>
+
+          <!-- Table Schema View -->
+          <div>
+            <h3 class="font-bold text-slate-100 text-lg mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-table text-indigo-400"></i> 1. 表格結構設計
+            </h3>
+            <div class="overflow-x-auto border border-slate-800 rounded-xl shadow-lg custom-scrollbar">
+              <table class="min-w-full divide-y divide-slate-800 text-sm">
+                <thead class="bg-slate-900">
+                  <tr>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">A 欄 (手動)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">B 欄 (自動公式爬取)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">C 欄 (手動)</th>
+                    <th class="px-4 py-3 text-left font-bold text-slate-300">D 欄 (🤖 AI，綜合 B 與 C)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800 bg-slate-900/40">
+                  <tr>
+                    <td class="px-4 py-4 font-mono text-slate-400">RSS 訂閱網址 (例如：科技新報)</td>
+                    <td class="px-4 py-4 font-mono text-emerald-400 font-semibold">=IMPORTFEED(A2, "items title", FALSE, 5)</td>
+                    <td class="px-4 py-4 font-mono text-slate-400">社群撰寫任務與風格需求</td>
+                    <td class="px-4 py-4 font-mono text-indigo-400 font-semibold">AI 最終社群文案</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Formula & Copy Section -->
+          <div class="space-y-4">
+            <h3 class="font-bold text-slate-100 text-lg flex items-center gap-2">
+              <i class="fa-solid fa-code text-indigo-400"></i> 2. 雙語 Gemini 公式密技 (D2 文案自動撰寫)
+            </h3>
+            <p class="text-sm text-slate-400">
+              在 D2 儲存格中輸入以下公式，Gemini 會將爬到的多條標題（B2）作為當前最新的事實背景，並精準執行您 C2 的指令任務：
+            </p>
+            <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-xs overflow-x-auto leading-relaxed border border-slate-800">
+              <div class="absolute right-4 top-4">
+                <button onclick="copyText(this.nextElementSibling.innerText, 'copy-copy')" id="copy-copy" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+                  <i class="fa-regular fa-copy"></i> 複製公式
+                </button>
+                <span class="hidden">=GEMINI("Read the provided supplementary RSS data carefully, then use it as your knowledge base to complete the User Task.
+
+[Supplementary Knowledge Base]: " & B2 & "
+[User Task]: " & C2 & "
+
+[Output Requirements]:
+1. Generate catchy social media copy. Include 3 relevant hashtags.
+2. You MUST reply in Traditional Chinese (繁體中文).")</span>
+              </div>
+              <pre><code class="text-emerald-400">=GEMINI</code>(<span class="text-yellow-300">"Read the provided supplementary RSS data carefully, then use it as your knowledge base to complete the User Task.
+
+[Supplementary Knowledge Base]: "</span> & <span class="text-violet-400">B2</span> & <span class="text-yellow-300">"
+[User Task]: "</span> & <span class="text-violet-400">C2</span> & <span class="text-yellow-300">"
+
+[Output Requirements]:
+1. Generate catchy social media copy. Include 3 relevant hashtags.
+2. You MUST reply in Traditional Chinese (繁體中文)."</span>)</pre>
+            </div>
+          </div>
+
+          <!-- Dora Pro Tip -->
+          <div class="bg-indigo-950/30 border-l-4 border-indigo-500 p-4 rounded-r-xl">
+            <span class="font-bold text-indigo-400 text-sm flex items-center gap-1.5 mb-1"><i class="fa-solid fa-circle-exclamation"></i> 炫辰 前輩的私房話：</span>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              「如果想要隨時有題材，你可以收集像是 **經理人 (https://www.managertoday.com.tw/rss)** 或 **科技新報 (https://technews.tw/feed/)** 的 RSS 貼在 A 欄。每天上班時，試算表一刷新，最新話題與 AI 幫你潤飾完的文案草稿就全部備齊了！」
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKSPACE SIMULATOR -->
+  <section id="simulator" class="py-16 bg-slate-900/40 border-b border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-black text-slate-100 text-glow">⚡ 實機體驗：AI 試算表工作流模擬器</h2>
+        <p class="text-slate-400 mt-2">免安裝！直接在此輸入範例資料，點擊按鈕，親眼見證橫向 AI 接力是如何運作的</p>
+      </div>
+
+      <!-- Simulator Container -->
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl shadow-indigo-950/30 overflow-hidden max-w-5xl mx-auto">
+        <!-- Google Sheets Header Mockup -->
+        <div class="bg-slate-950 px-5 py-4 border-b border-slate-800 flex items-center justify-between">
+          <div class="flex items-center space-x-3">
+            <div class="w-8 h-8 rounded bg-emerald-600 text-white flex items-center justify-center font-bold">
+              <i class="fa-solid fa-file-excel"></i>
+            </div>
+            <div>
+              <span class="text-sm font-bold text-slate-200">Xuanchen_Enyou_AIBOX_v1.0</span>
+              <span class="text-xs text-slate-500 block">儲存至雲端硬碟 - 唯讀預覽模式</span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-xs bg-emerald-950/80 text-emerald-400 border border-emerald-800/50 font-bold px-2.5 py-1 rounded-full"><i class="fa-solid fa-circle text-[8px] animate-pulse mr-1"></i> Gemini API 已連線</span>
+          </div>
+        </div>
+
+        <!-- Simulator Grid -->
+        <div class="grid lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-slate-800">
+          
+          <!-- LEFT: Input Panel -->
+          <div class="p-6 bg-slate-950/30 lg:col-span-1 space-y-5">
+            <h3 class="font-bold text-slate-100 flex items-center gap-1.5"><i class="fa-solid fa-pen-to-square text-indigo-400"></i> 第一步：手動輸入測試數據</h3>
+            
+            <!-- Type Selector -->
+            <div>
+              <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">選擇模擬的主題</label>
+              <select id="sim-theme-selector" onchange="switchSimTheme(this.value)" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-3 py-2.5 text-sm font-medium text-slate-200 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                <option value="prd">PRD 需求規劃生成器</option>
+                <option value="meeting">會議記錄行動整理器</option>
+                <option value="testcase">專案 Test Case 生成器</option>
+              </select>
+            </div>
+
+            <!-- Context Input 1 -->
+            <div id="sim-input-group-1">
+              <label id="sim-label-1" class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">測試範圍 (A2)</label>
+              <textarea id="sim-val-1" rows="3" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-sm text-slate-200 focus:ring-2 focus:ring-indigo-500 focus:outline-none">兒童故事播放器的睡眠定時功能</textarea>
+            </div>
+
+            <!-- Context Input 2 -->
+            <div id="sim-input-group-2">
+              <label id="sim-label-2" class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">測試目的 (B2)</label>
+              <textarea id="sim-val-2" rows="3" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-sm text-slate-200 focus:ring-2 focus:ring-indigo-500 focus:outline-none">確保時間倒數結束後，音訊漸弱自動關閉，不打擾睡眠</textarea>
+            </div>
+
+            <!-- Context Input 3 -->
+            <div id="sim-input-group-3">
+              <label id="sim-label-3" class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">測試備註 (C2)</label>
+              <textarea id="sim-val-3" rows="3" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-sm text-slate-200 focus:ring-2 focus:ring-indigo-500 focus:outline-none">需考慮電話撥入或使用者手動暫停等極端情境</textarea>
+            </div>
+
+            <!-- Run Button -->
+            <button onclick="runSimulator()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-lg shadow-indigo-950/50 transition-all hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2">
+              <i class="fa-solid fa-play"></i> 執行 AI 橫向生成 (Run)
+            </button>
+          </div>
+
+          <!-- RIGHT: Simulated Google Sheets Table -->
+          <div class="lg:col-span-2 p-6 overflow-hidden flex flex-col justify-between">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="font-bold text-slate-100 flex items-center gap-1.5"><i class="fa-solid fa-table-list text-emerald-500"></i> 第二步：試算表橫向自動接力成果</h3>
+              <span class="text-xs text-slate-500">橫向公式自動下拉演算</span>
+            </div>
+
+            <!-- Mock Sheet UI -->
+            <div class="border border-slate-800 rounded-xl overflow-hidden flex-grow custom-scrollbar overflow-x-auto">
+              <div class="min-w-[800px] text-xs">
+                <!-- Columns Header -->
+                <div id="sheet-header" class="grid grid-cols-12 bg-slate-950 font-bold border-b border-slate-800 text-slate-400 text-center divide-x divide-slate-800 py-2">
+                  <div class="col-span-3">A 欄 (手動範圍)</div>
+                  <div class="col-span-3">B 欄 (手動目的)</div>
+                  <div class="col-span-3">C 欄 (手動備註)</div>
+                  <div class="col-span-3 text-indigo-400">D 欄 (=GEMINI)</div>
+                </div>
+
+                <!-- Row data -->
+                <div id="sheet-row" class="grid grid-cols-12 divide-x divide-slate-800 border-b border-slate-900 py-3 min-h-[300px] bg-slate-900/10 text-slate-300">
+                  <div id="cell-a2" class="col-span-3 px-3 py-1 font-medium whitespace-pre-wrap leading-relaxed border-slate-800">兒童故事播放器的睡眠定時功能</div>
+                  <div id="cell-b2" class="col-span-3 px-3 py-1 font-medium whitespace-pre-wrap leading-relaxed border-slate-800">確保時間倒數結束後，音訊漸弱自動關閉，不打擾睡眠</div>
+                  <div id="cell-c2" class="col-span-3 px-3 py-1 font-medium whitespace-pre-wrap leading-relaxed border-slate-800">需考慮電話撥入或使用者手動暫停等極端情境</div>
+                  <div id="cell-d2" class="col-span-3 px-3 py-2 font-mono text-slate-500 italic flex items-center justify-center text-center">
+                    <div>
+                      <p class="mb-2">等待您點擊「執行 AI 橫向生成」...</p>
+                      <span class="text-[10px] bg-slate-950 px-2 py-1 rounded border border-slate-800 text-slate-500 font-sans">Formula: =GEMINI(...)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Loader / Notice -->
+            <div id="sim-loader" class="hidden mt-4 bg-indigo-950/80 border border-indigo-900/50 text-indigo-400 px-4 py-3 rounded-xl flex items-center gap-3 animate-pulse">
+              <i class="fa-solid fa-spinner animate-spin text-lg"></i>
+              <span class="text-xs font-bold">炫辰 研發的 AI 正在串接試算表公式並進行橫向推理，請稍候...</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO PERSISTENCE -->
+  <section class="py-16 bg-gradient-to-r from-slate-950 to-indigo-950 text-white relative overflow-hidden border-b border-slate-900">
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_60%,transparent_100%)] opacity-[0.02]"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h2 class="text-3xl font-black mb-4">想要隨時隨地保存您的 AI 辦公範本嗎？</h2>
+      <p class="text-indigo-300/80 max-w-2xl mx-auto mb-8 text-sm sm:text-base leading-relaxed">
+        學會了 炫辰 前輩的雙語夾擊公式，只要將進度儲存於您的雲端空間，就能在所有裝置上同步進度。若您希望，我們未來還能為這款工具升級加入「與同事協作、共享範本」的多人分享功能！
+      </p>
+      <div class="flex justify-center gap-4">
+        <a href="#units" class="bg-slate-100 hover:bg-slate-200 text-slate-950 px-6 py-3 rounded-xl font-bold transition shadow-lg text-sm">
+          回到教學複習公式
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-slate-500 py-12 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="flex items-center justify-center space-x-2 text-white font-black text-xl mb-6">
+        <div class="bg-indigo-600 p-2 rounded-lg"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+        <span>GYOZA AI BOX</span>
+      </div>
+      <p class="text-xs text-slate-600 leading-relaxed max-w-md mx-auto mb-4">
+        本教學為「GYOZA AI BOX - 辦公室效率系列」第一個主題單元。利用內建 Gemini 的 AI 大腦與 Excel/Sheets 計算特點，解決繁瑣的行政、PM、與 QA 痛點。
+      </p>
+      <p class="text-[11px] text-slate-700">
+        © 2026 GYOZA LAB & Xuanchen Co. All rights reserved. 職場前輩愛你喔。
+      </p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT FOR INTERACTION -->
+  <script>
+    // Tab Switching Logic
+    function switchTab(tabId, btn) {
+      // Hide all contents
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.add('hidden');
+      });
+      // Show targeted content
+      document.getElementById(tabId).classList.remove('hidden');
+
+      // Update button styles for Dark theme
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.className = "tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-slate-200 flex items-center gap-2 border border-slate-800";
+      });
+      btn.className = "tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-indigo-600 text-white shadow-md shadow-indigo-950/50 flex items-center gap-2";
+    }
+
+    // Copy to clipboard fallback handler
+    function copyText(text, btnId) {
+      const tempInput = document.createElement("textarea");
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+      
+      const btn = document.getElementById(btnId);
+      const originalHtml = btn.innerHTML;
+      btn.innerHTML = '<i class="fa-solid fa-check"></i> 已複製!';
+      btn.className = "bg-green-600 text-white px-3 py-1.5 rounded-lg font-sans text-xs font-bold transition flex items-center gap-1.5";
+      setTimeout(() => {
+        btn.innerHTML = originalHtml;
+        btn.className = "bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-xs font-bold transition flex items-center gap-1.5 border border-slate-700";
+      }, 2000);
+    }
+
+    // Mock Database for Simulator
+    const simDatabase = {
+      prd: {
+        cols: ["A 欄 (功能概念 Idea)", "B 欄 (=GEMINI 用戶旅程)", "C 欄 (=GEMINI PRD 需求)", "D 欄 (=GEMINI 流程漏洞)"],
+        labels: ["功能概念 (A2)", "測試目的 (B2)", "測試備註 (C2)"],
+        defaults: [
+          "建立兒童故事 Podcast 播放器的「定時關閉/睡眠模式」功能。",
+          "讓媽媽在睡前播放音檔時，可以自訂 15/30/60 分鐘後停止，避免吵醒睡著的小孩。",
+          "注意需要支援淡出 (Fade-out) 的熄音機制，以及當時間剩不到 5 分鐘時點擊按鈕的邊界狀況。"
+        ],
+        outputs: [
+          "兒童故事播放器的定時睡眠功能",
+          "【用戶旅程階段】\n1. 點擊：用戶打開故事播放頁面。\n2. 選擇：點選睡眠倒數計時 icon。\n3. 設定：從選單選擇「30 分鐘」並按確定。\n4. 提示：播放器左下方顯示微小的倒數計時狀態。\n5. 結束：時間到，音量在最後 10 秒漸弱至 0，隨後暫停播放，螢幕不亮起。",
+          "【PRD需求初稿】\n- [定時觸發選單]：高優先級。提供 15/30/60/播完當集 四個按鈕。\n- [音量漸弱控制]：中優先級。時間歸零前 10 秒，音量以每秒 10% 的斜率淡出降至 0。\n- [背景常駐計時]：高優先級。即便手機進入鎖屏，背景計時器仍需穩定運行不中斷。",
+          "【流程漏洞與 Edge Cases】\n1. [播完當集 vs 定時衝突]：若使用者點選「播完當集」，但當集長度只有 3 分鐘，而定時設 15 分鐘，是否直接在 3 分鐘處停播？建議優先遵循播完當集邏輯。\n2. [計時期間電話打入]：電話撥入時，音訊會暫停。計時器是否該暫停？建議背景計時繼續，以防干擾睡眠計畫。\n3. [剩餘時間小於定時]：當剩下 5 分鐘，用戶設定定時 15 分鐘。建議系統彈出微型提示告知「本集長度小於設定定時，將於播畢後關閉」以達到貼心體驗。"
+        ]
+      },
+      meeting: {
+        cols: ["A 欄 (會議基本資訊)", "B 欄 (會議原始逐字稿)", "C 欄 (=GEMINI 行動清單)", "D 欄 (=GEMINI 負責人與死線)"],
+        labels: ["會議基本資訊 (A2)", "會議紀錄/決議內容 (B2)", "空欄位 (C2) - 免填"],
+        defaults: [
+          "2026-05-26 | 故事 App 功能會審",
+          "恩佑說這週五前可以先把計時功能的 Test Case 給工程師看。另外，行銷部門的 Apple 提到希望在 5/31 前要產出第一版社群文案，下週一開會時要對。對了，上線前需要請主管 炫辰 進行最終簽核，這部分看誰有空再去提，但最好在 6/5 前完成。",
+          "（本欄位此模式下由 A 與 B 綜合分析，免填寫）"
+        ],
+        outputs: [
+          "2026-05-26 | 故事 App 會審",
+          "恩佑要在週五前給出 Test Case...\nApple 要在 5/31 前產出社群文案...\n主管 炫辰 要在 6/5 前進行最終簽核...",
+          "【待辦行動清單 (Action Items)】\n1. 撰寫並提供計時功能之 Test Case 給工程部門。\n2. 產出第一版故事定時功能社群推廣文案。\n3. 向主管 炫辰 提交睡眠定時功能之上線簽核申請。",
+          "【負責人與預計死線對齊】\n1. [負責人]：恩佑 | [死線]：本週五前 (2026/05/29)\n2. [負責人]：Apple (行銷) | [死線]：2026/05/31 前\n3. [負責人]：待確認 (建議由負責 PM 承接) | [死線]：2026/06/05 前\n* 主管簽核人：炫辰"
+        ]
+      },
+      testcase: {
+        cols: ["A 欄 (測試範圍 Scope)", "B 欄 (測試目的 Purpose)", "C 欄 (測試備註 Remarks)", "D 欄 (=GEMINI 功能與情境)"],
+        labels: ["測試範圍 (A2)", "測試目的 (B2)", "測試備註 (C2)"],
+        defaults: [
+          "睡眠定時與倒數計時功能",
+          "確保不同定時選單（15、30、60分）在倒數結束後，音效漸弱並精準關閉播放器",
+          "需特別注意在鎖屏模式（Lock Screen）以及背景常駐運行（Background Service）時的穩定度"
+        ],
+        outputs: [
+          "睡眠定時與倒數計時功能",
+          "確保倒數結束後精準關閉播放器",
+          "特別注意鎖屏與背景常駐穩定度",
+          "【功能與測試情境發想 (Test Scenarios)】\n\n[正向情境 (Positive)]:\n1. 驗證在螢幕亮起狀態下，點擊 15 分鐘定時，倒數結束後音源精準關閉。\n2. 驗證背景倒數期間，點擊「取消定時」按鈕，計時器是否正確重設，音樂不中斷。\n\n[負向/邊界情境 (Negative)]:\n1. 鎖屏測試：啟動 30 分鐘定時並將手機鎖屏。驗證 30 分鐘後音樂是否正常停止播放（測試背景服務是否被系統自動殺死）。\n2. 網絡中斷：定時倒數期間將網路斷開。驗證倒數結束時，播放器是否仍能正常觸發本地停止指令（防止死鎖狀態）。\n3. 電話干擾：倒數剩餘 2 分鐘時撥入電話。驗證電話掛斷後，倒數是否正確恢復並在原定時限關閉音樂。"
+        ]
+      }
+    };
+
+    // Switch simulator theme
+    function switchSimTheme(theme) {
+      const data = simDatabase[theme];
+      if (!data) return;
+
+      // Update Labels
+      document.getElementById('sim-label-1').innerText = data.labels[0];
+      document.getElementById('sim-label-2').innerText = data.labels[1];
+      document.getElementById('sim-label-3').innerText = data.labels[2];
+
+      // Update Default Text Values
+      document.getElementById('sim-val-1').value = data.defaults[0];
+      document.getElementById('sim-val-2').value = data.defaults[1];
+      document.getElementById('sim-val-3').value = data.defaults[2];
+
+      // Hide optional third group if not needed
+      if (data.labels[2].includes("免填")) {
+        document.getElementById('sim-input-group-3').style.opacity = "0.5";
+        document.getElementById('sim-val-3').disabled = true;
+      } else {
+        document.getElementById('sim-input-group-3').style.opacity = "1";
+        document.getElementById('sim-val-3').disabled = false;
+      }
+
+      // Update Sheet Column Headers UI
+      const headerDiv = document.getElementById('sheet-header');
+      headerDiv.children[0].innerText = data.cols[0];
+      headerDiv.children[1].innerText = data.cols[1];
+      headerDiv.children[2].innerText = data.cols[2];
+      headerDiv.children[3].innerText = data.cols[3];
+
+      // Reset Row Cell Content
+      document.getElementById('cell-a2').innerText = data.defaults[0];
+      document.getElementById('cell-b2').innerText = data.defaults[1];
+      document.getElementById('cell-c2').innerText = data.defaults[2];
+      document.getElementById('cell-d2').innerHTML = `
+        <div>
+          <p class="mb-2">等待您點擊「執行 AI 橫向生成」...</p>
+          <span class="text-[10px] bg-slate-950 px-2 py-1 rounded border border-slate-800 text-slate-500 font-sans">Formula: =GEMINI(...)</span>
+        </div>
+      `;
+    }
+
+    // Run Simulation
+    function runSimulator() {
+      const theme = document.getElementById('sim-theme-selector').value;
+      const val1 = document.getElementById('sim-val-1').value;
+      const val2 = document.getElementById('sim-val-2').value;
+      const val3 = document.getElementById('sim-val-3').value;
+
+      // Update manual inputs in table preview instantly
+      document.getElementById('cell-a2').innerText = val1;
+      document.getElementById('cell-b2').innerText = val2;
+      document.getElementById('cell-c2').innerText = val3;
+
+      // Show loader
+      const loader = document.getElementById('sim-loader');
+      loader.classList.remove('hidden');
+
+      // Clear D2 temporarily to simulate calculation
+      document.getElementById('cell-d2').innerHTML = `
+        <div class="flex flex-col items-center justify-center py-4 space-y-2">
+          <i class="fa-solid fa-circle-notch animate-spin text-indigo-600 text-lg"></i>
+          <span class="text-[10px] text-slate-400 font-bold">GEMINI 運算中...</span>
+        </div>
+      `;
+
+      // Wait 1.8 seconds to mock AI delay
+      setTimeout(() => {
+        loader.classList.add('hidden');
+        const dbEntry = simDatabase[theme];
+
+        // Format the simulated AI output (Stunning Dark mode styled container)
+        let outHtml = `<div class="bg-indigo-950/40 p-2.5 rounded-lg border border-indigo-900/50 text-[11px] leading-relaxed text-indigo-200 text-left whitespace-pre-wrap">`;
+        
+        // If user changed input, slightly adapt mock outputs
+        if (theme === 'prd') {
+          outHtml += `<strong>【讀取 B2/C2 產出的極端情境】</strong>\n`;
+          outHtml += `針對 A2 的「${val1.substring(0, 10)}...」功能：\n\n`;
+          outHtml += dbEntry.outputs[3];
+        } else if (theme === 'meeting') {
+          outHtml += `<strong>【AI 行動清單與負責人對應】</strong>\n\n`;
+          outHtml += dbEntry.outputs[2] + `\n\n` + dbEntry.outputs[3];
+        } else {
+          outHtml += `<strong>【AI 自動產出測試情境】</strong>\n`;
+          outHtml += `針對目的：${val2.substring(0, 15)}...\n\n`;
+          outHtml += dbEntry.outputs[3];
+        }
+
+        outHtml += `</div>`;
+        document.getElementById('cell-d2').innerHTML = outHtml;
+      }, 1800);
+    }
+  </script>
+</body>
+</html>
