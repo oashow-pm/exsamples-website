@@ -62,7 +62,7 @@
         </div>
         <div>
           <span class="font-black text-slate-50 tracking-wider text-lg block leading-none">GUGUGAGA AI BOX</span>
-          <span class="text-xs text-indigo-400 font-bold tracking-widest uppercase">Work Efficiency Improvement Series</span>
+          <span class="text-sm text-indigo-400 font-bold tracking-widest uppercase">Work Efficiency Improvement Series</span>
         </div>
       </div>
       <nav class="hidden md:flex space-x-1">
@@ -88,7 +88,7 @@
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         <!-- Left: Copy & Actions -->
         <div class="lg:col-span-7 text-left">
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-indigo-950/80 text-indigo-400 border border-indigo-800/60 mb-6 uppercase tracking-widest animate-pulse">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-bold bg-indigo-950/80 text-indigo-400 border border-indigo-800/60 mb-6 uppercase tracking-widest animate-pulse">
             <i class="fa-solid fa-bolt"></i> Google Sheetss × Gemini AI 公式實戰教學
           </span>
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-55 tracking-tight leading-none mb-6">
@@ -122,15 +122,16 @@
           </div>
 
           <!-- Creative Floating Badge -->
-          <div class="absolute -bottom-5 -left-5 bg-slate-900 border border-slate-800 p-4 rounded-2xl shadow-2xl flex items-center space-x-3 max-w-[220px]">
+          <!--<div class="absolute -bottom-5 -left-5 bg-slate-900 border border-slate-800 p-4 rounded-2xl shadow-2xl flex items-center space-x-3 max-w-[220px]">
             <div class="bg-amber-950/60 text-amber-400 w-10 h-10 rounded-xl flex items-center justify-center text-lg font-bold flex-shrink-0 border border-amber-800/30">
               🔥
             </div>
             <div>
               <span class="block text-[12px] text-slate-500 font-bold tracking-wider uppercase">職場小白大變身</span>
-              <span class="block text-xs font-black text-slate-200">試算表自動化解鎖</span>
+              <span class="block text-sm font-black text-slate-200">試算表自動化解鎖</span>
             </div>
-          </div>
+          </div>-->
+		  
         </div>
       </div>
     </div>
@@ -233,7 +234,7 @@
           </div>
           <h3 class="font-bold text-slate-100 mb-2">直接下中文指令？</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
-            Google Sheets內建的 `=GEMINI()` 函式對中文指令審查極其嚴格，常常拋出 <span class="text-red-400 font-mono text-xs font-bold">"The language is not supported"</span> 的錯誤訊息，宣告失敗。
+            Google Sheets內建的 `=GEMINI()` 函式對中文指令審查極其嚴格，常常拋出 <span class="text-red-400 font-mono text-sm font-bold">"The language is not supported"</span> 的錯誤訊息，宣告失敗。
           </p>
         </div>
 
@@ -335,9 +336,9 @@
             <p class="text-sm text-slate-400">
               在 E2 儲存格中輸入以下公式，它會讀取 D2 生成的流程設計，以資深 QA 的角度瘋狂挑戰並挑出系統漏洞：
             </p>
-            <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-xs overflow-x-auto leading-relaxed border border-slate-800">
+            <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-sm overflow-x-auto leading-relaxed border border-slate-800">
               <div class="absolute right-4 top-4">
-                <button onclick="copyText(this.nextElementSibling.innerText, 'copy-prd')" id="copy-prd" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+                <button onclick="copyText(this.nextElementSibling.innerText, 'copy-prd')" id="copy-prd" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-sm font-bold transition flex items-center gap-1.5 border border-slate-700">
                   <i class="fa-regular fa-copy"></i> 複製公式
                 </button>
                 <span class="hidden">=GEMINI("You are a strict QA Director and Senior Engineer. Review the designed Flow and System Logic to identify any hidden flaws, blind spots, or edge cases (e.g., network timeout, empty states, maximum limits).
@@ -359,7 +360,7 @@
           <!-- Dora Pro Tip -->
           <div class="bg-indigo-950/30 border-l-4 border-indigo-500 p-4 rounded-r-xl">
             <span class="font-bold text-indigo-400 text-sm flex items-center gap-1.5 mb-1"><i class="fa-solid fa-circle-exclamation"></i> 炫辰 前輩的私房話：</span>
-            <p class="text-xs text-slate-300 leading-relaxed">
+            <p class="text-sm text-slate-300 leading-relaxed">
               「E 欄這個『流程漏洞檢視』超級好用。我們在做功能規劃時，常會遺漏一些邊緣情況（像是網路斷訊、沒資料時的畫面、點擊上限等）。AI 扮演的惡魔裁判能幫你防範未然，在會審（Refinement）前幫你擋掉至少 80% 工程師對你的靈魂拷問！」
             </p>
           </div>
@@ -413,9 +414,9 @@
             <p class="text-sm text-slate-400">
               在 C2 儲存格中輸入以下公式，它會將會議原始逐字稿（B2）生成具體的行動任務清單：
             </p>
-            <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-xs overflow-x-auto leading-relaxed border border-slate-800">
+            <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-sm overflow-x-auto leading-relaxed border border-slate-800">
               <div class="absolute right-4 top-4">
-                <button onclick="copyText(this.nextElementSibling.innerText, 'copy-meet')" id="copy-meet" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+                <button onclick="copyText(this.nextElementSibling.innerText, 'copy-meet')" id="copy-meet" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-sm font-bold transition flex items-center gap-1.5 border border-slate-700">
                   <i class="fa-regular fa-copy"></i> 複製公式
                 </button>
                 <span class="hidden">=GEMINI("You are an executive assistant. Analyze the meeting minutes provided below and extract clear, actionable 'Action Items.
@@ -435,7 +436,7 @@
           <!-- Dora Pro Tip -->
           <div class="bg-indigo-950/30 border-l-4 border-indigo-500 p-4 rounded-r-xl">
             <span class="font-bold text-indigo-400 text-sm flex items-center gap-1.5 mb-1"><i class="fa-solid fa-circle-exclamation"></i> 炫辰 前輩的私房話：</span>
-            <p class="text-xs text-slate-300 leading-relaxed">
+            <p class="text-sm text-slate-300 leading-relaxed">
               「開會時，如果能把當天的日期寫在 A 欄，並在 E2（預計完成日）的公式中加上 'Today is ' & A2 & ', please calculate the actual dates.'。AI 甚至能把口語的『下週五前』、『下月底』等模糊時間，自動換算成明確的年月日格式，省去翻行事曆對照的功夫！」
             </p>
           </div>
@@ -489,9 +490,9 @@
             <p class="text-sm text-slate-400">
               在 E2 儲存格中輸入以下公式，它會綜合參考功能點與您的備註，自動列出必須測試的正向情境（正常操作）與負向情境（防呆與系統阻擋）：
             </p>
-            <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-xs overflow-x-auto leading-relaxed border border-slate-800">
+            <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-sm overflow-x-auto leading-relaxed border border-slate-800">
               <div class="absolute right-4 top-4">
-                <button onclick="copyText(this.nextElementSibling.innerText, 'copy-tc')" id="copy-tc" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+                <button onclick="copyText(this.nextElementSibling.innerText, 'copy-tc')" id="copy-tc" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-sm font-bold transition flex items-center gap-1.5 border border-slate-700">
                   <i class="fa-regular fa-copy"></i> 複製公式
                 </button>
                 <span class="hidden">=GEMINI("You are a professional QA engineer. Based on the broken-down 'Function Descriptions' on the left, please plan the corresponding 'Test Scenario' for these functions.
@@ -512,7 +513,7 @@
           <!-- Dora Pro Tip -->
           <div class="bg-indigo-950/30 border-l-4 border-indigo-500 p-4 rounded-r-xl">
             <span class="font-bold text-indigo-400 text-sm flex items-center gap-1.5 mb-1"><i class="fa-solid fa-circle-exclamation"></i> 炫辰 前輩的私房話：</span>
-            <p class="text-xs text-slate-300 leading-relaxed">
+            <p class="text-sm text-slate-300 leading-relaxed">
               「AI 寫出的測試案例（Test Scenario）覆蓋率通常可以達到 85% 以上。如果希望情境能自動向下在試算表展平成多列，可以研究搭配試算表內建的 `=TRANSPOSE(SPLIT(GEMINI(...), "換行符號"))` 來實現，這樣就連打字整理的工夫都完全省下了。」
             </p>
           </div>
@@ -564,9 +565,9 @@
             <p class="text-sm text-slate-400">
               在 D2 儲存格中輸入以下公式，Gemini 會將爬到的網站描述（B2）作為當前參考背景，並精準執行您 C2 的指令任務：
             </p>
-            <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-xs overflow-x-auto leading-relaxed border border-slate-800">
+            <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-sm overflow-x-auto leading-relaxed border border-slate-800">
               <div class="absolute right-4 top-4">
-                <button onclick="copyText(this.nextElementSibling.innerText, 'copy-copy')" id="copy-copy" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+                <button onclick="copyText(this.nextElementSibling.innerText, 'copy-copy')" id="copy-copy" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-sm font-bold transition flex items-center gap-1.5 border border-slate-700">
                   <i class="fa-regular fa-copy"></i> 複製公式
                 </button>
                 <span class="hidden">=GEMINI("You are an editor at a fortune-telling website, responsible for writing copy related to fortune-telling, astrology, numerology, Bazi (Four Pillars of Destiny), Zi Wei Dou Shu (Purple Star Astrology), daily horoscopes, annual horoscopes, compatibility analysis, love, luck, names, tarot cards, career fortune, past life rebirth, divination, and online courses. 
@@ -586,7 +587,7 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
           <!-- Dora Pro Tip -->
           <div class="bg-indigo-950/30 border-l-4 border-indigo-500 p-4 rounded-r-xl">
             <span class="font-bold text-indigo-400 text-sm flex items-center gap-1.5 mb-1"><i class="fa-solid fa-circle-exclamation"></i> 炫辰 前輩的私房話：</span>
-            <p class="text-xs text-slate-300 leading-relaxed">
+            <p class="text-sm text-slate-300 leading-relaxed">
               「現在大部份的網站，為了防止自家的優質文章內容被 Google Sheets、ChatGPT 等外部 AI 工具直接抓取進行「零點擊摘要」（導致讀者不上網站看廣告），都已經在網站後台全面啟動了阻擋爬蟲（Block Scrapers/AI Bots）的機制。因此，只能抓取網頁中開放式的資料，例如title、description，要衍生更多文案，可以在試算表增加「參考欄位」，或隨時變更風格，每天上班時，試算表一刷新，AI 幫你潤飾完的文案草稿就全部備齊了！」
             </p>
           </div>
@@ -614,11 +615,11 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
             </div>
             <div>
               <span id="sheet-title" class="text-sm font-bold text-slate-200">GUGUGAGA_AIBOX_v1.0</span>
-              <span class="text-xs text-slate-500 block">儲存至雲端硬碟 - 唯讀預覽模式</span>
+              <span class="text-sm text-slate-500 block">儲存至雲端硬碟 - 唯讀預覽模式</span>
             </div>
           </div>
           <div class="flex items-center space-x-2">
-            <span class="text-xs bg-emerald-950/80 text-emerald-400 border border-emerald-800/50 font-bold px-2.5 py-1 rounded-full"><i class="fa-solid fa-circle text-[8px] animate-pulse mr-1"></i> Gemini API 已連線</span>
+            <span class="text-sm bg-emerald-950/80 text-emerald-400 border border-emerald-800/50 font-bold px-2.5 py-1 rounded-full"><i class="fa-solid fa-circle text-[8px] animate-pulse mr-1"></i> Gemini API 已連線</span>
           </div>
         </div>-->
 
@@ -631,7 +632,7 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
             
             <!-- Type Selector -->
             <div>
-              <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">選擇模擬的主題</label>
+              <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">選擇模擬的主題</label>
               <select id="sim-theme-selector" onchange="switchSimTheme(this.value)" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-3 py-2.5 text-sm font-medium text-slate-200 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                 <option value="prd">PRD 需求規劃生成器</option>
                 <option value="meeting">會議記錄行動整理器</option>
@@ -641,19 +642,19 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
 
             <!-- Context Input 1 -->
             <div id="sim-input-group-1">
-              <label id="sim-label-1" class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">功能概念 (A2)</label>
+              <label id="sim-label-1" class="block text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">功能概念 (A2)</label>
               <textarea id="sim-val-1" rows="3" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-sm text-slate-200 focus:ring-2 focus:ring-indigo-500 focus:outline-none">兒童故事播放器的睡眠定時功能</textarea>
             </div>
 
             <!-- Context Input 2 -->
             <div id="sim-input-group-2">
-              <label id="sim-label-2" class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">測試目的 (B2)</label>
+              <label id="sim-label-2" class="block text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">測試目的 (B2)</label>
               <textarea id="sim-val-2" rows="4" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-sm text-slate-200 focus:ring-2 focus:ring-indigo-500 focus:outline-none">確保時間倒數結束後，音訊漸弱自動關閉，不打擾睡眠</textarea>
             </div>
 
             <!-- Context Input 3 -->
             <div id="sim-input-group-3">
-              <label id="sim-label-3" class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">測試備註 (C2)</label>
+              <label id="sim-label-3" class="block text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">測試備註 (C2)</label>
               <textarea id="sim-val-3" rows="3" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-sm text-slate-200 focus:ring-2 focus:ring-indigo-500 focus:outline-none">需考慮電話撥入或使用者手動暫停等極端情境</textarea>
             </div>
 
@@ -667,12 +668,12 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
           <div class="lg:col-span-2 p-6 overflow-hidden flex flex-col justify-between">
             <div class="flex items-center justify-between mb-4">
               <h3 class="font-bold text-slate-100 flex items-center gap-1.5"><i class="fa-solid fa-table-list text-emerald-500"></i> 第二步：試算表橫向自動接力成果</h3>
-              <span class="text-xs text-slate-500">橫向公式自動下拉演算</span>
+              <span class="text-sm text-slate-500">橫向公式自動下拉演算</span>
             </div>
 
             <!-- Mock Sheet UI -->
             <div class="border border-slate-800 rounded-xl overflow-hidden flex-grow custom-scrollbar overflow-x-auto">
-              <div class="min-w-[800px] text-xs">
+              <div class="min-w-[800px] text-sm">
                 <!-- Columns Header Grid -->
                 <div id="sheet-header" class="grid grid-cols-12 bg-slate-950 font-bold border-b border-slate-800 text-slate-400 text-center divide-x divide-slate-800 py-2">
                   <div id="hdr-col-1" class="col-span-3">A 欄 (功能概念 Idea)</div>
@@ -699,7 +700,7 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
             <!-- Loader / Notice -->
             <div id="sim-loader" class="hidden mt-4 bg-indigo-950/80 border border-indigo-900/50 text-indigo-400 px-4 py-3 rounded-xl flex items-center gap-3 animate-pulse">
               <i class="fa-solid fa-spinner animate-spin text-lg"></i>
-              <span class="text-xs font-bold">AI 正在串接試算表公式並進行橫向推理，請稍候...</span>
+              <span class="text-sm font-bold">AI 正在串接試算表公式並進行橫向推理，請稍候...</span>
             </div>
           </div>
 
@@ -820,10 +821,10 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
       const btn = document.getElementById(btnId);
       const originalHtml = btn.innerHTML;
       btn.innerHTML = '<i class="fa-solid fa-check"></i> 已複製!';
-      btn.className = "bg-green-600 text-white px-3 py-1.5 rounded-lg font-sans text-xs font-bold transition flex items-center gap-1.5";
+      btn.className = "bg-green-600 text-white px-3 py-1.5 rounded-lg font-sans text-sm font-bold transition flex items-center gap-1.5";
       setTimeout(() => {
         btn.innerHTML = originalHtml;
-        btn.className = "bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-xs font-bold transition flex items-center gap-1.5 border border-slate-700";
+        btn.className = "bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg font-sans text-sm font-bold transition flex items-center gap-1.5 border border-slate-700";
       }, 2000);
     }
 
