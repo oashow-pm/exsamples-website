@@ -62,7 +62,7 @@
         </div>
         <div>
           <span class="font-black text-slate-50 tracking-wider text-lg block leading-none">GUGUGAGA AI BOX</span>
-          <span class="text-xs text-indigo-400 font-bold tracking-widest uppercase">Work Efficiency Improvement Series</span>
+          <span class="text-xs text-indigo-400 font-bold tracking-widest uppercase">Efficiency Improvement Series</span>
         </div>
       </div>
       <nav class="hidden md:flex space-x-1">
@@ -188,14 +188,14 @@
           <div class="flex items-start space-x-3">
             <img src="https://lh3.googleusercontent.com/d/1pB-SxffcK9deBDXGsPwaC94WOhbu1D_a" alt="恩佑" class="w-20 h-20 rounded-full object-cover border border-slate-700 flex-shrink-0" onerror="this.onerror=null; this.src='1000046935.png';">
             <div class="bg-slate-900 p-3.5 rounded-2xl rounded-tl-none border border-slate-800 text-sm leading-relaxed text-slate-300 shadow-sm">
-              「炫辰前輩……我今天又有三個會議紀錄要整理，<span class="text-violet-400">威廉</span>還叫我生出新功能的 PRD，晚上還要寫 50 個測試案例，我是不是該直接睡在辦公室？」
+              「前輩……我今天又有三場會議紀錄還沒整理，<span class="text-violet-400">威廉</span>剛剛又丟新的功能 PRD 給我，晚上還要補 50 個 Test Case……，我是不是乾脆直接住公司比較快啊？😭」
             </div>
           </div>
 		  
           <div class="flex items-start space-x-3 justify-end">
 		  
             <div class="bg-violet-600 text-white p-3.5 rounded-2xl rounded-tr-none text-sm leading-relaxed shadow-md max-w-xl">
-              「睡公司？公司還要幫你付電費。別整天當肉眼搬運工。看好了，AI 不是拿來聊天的，是拿來當『流水線工人』的。我們今天就用 Google Sheets內建的 Gemini 函式，搭配試算表的表格特性，幫你打造一整套自動化工作流生成器。學不會的話，今天晚餐你請客。」
+              「住公司？你是想幫公司省通勤時間，還是順便當人體 UPS？別再用人腦硬搬資料了。今天教你用 Google Sheets 內建的 Gemini 函式，搭配試算表特性，幫你打造一套優化工作效率的 AI 工作流生成器。學不會的話，今天晚餐你請客。」
             </div>
             <img src="https://lh3.googleusercontent.com/d/1tLgfhnTJ7WOBH4a3eDCby-48KD1iGgOj" alt="炫辰" class="w-20 h-20 rounded-full object-cover border border-slate-700 flex-shrink-0" onerror="this.onerror=null; this.src='1000046934.png';">
           </div>
@@ -244,7 +244,7 @@
           </div>
           <h3 class="font-bold text-slate-100 mb-2">Gemini 公式密技</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
-            核心秘訣：**使用英文給定 AI 角色與任務結構，並利用 `&` 串接您的中文表格資料。最後強烈指令要求以繁體中文 (Traditional Chinese) 回覆！**
+            核心秘訣：**使用英文給定 AI 角色與任務結構，擅用「範圍」串接你的表格資料。最後強烈指令要求以繁體中文 (Traditional Chinese) 回覆！**
           </p>
         </div>
 
@@ -281,7 +281,7 @@
           <i class="fa-solid fa-vial-circle-check"></i> Test Case 生成器
         </button>
         <button onclick="switchTab('copywrite-tab', this)" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-slate-900 text-slate-400 hover:bg-slate-800 hover:text-slate-200 flex items-center gap-2 border border-slate-800">
-          <i class="fa-solid fa-feather-pointed"></i> 文案與外部 RSS 導入
+          <i class="fa-solid fa-feather-pointed"></i> 行銷文案生成器
         </button>
       </div>
 
@@ -295,7 +295,7 @@
               <img src="https://lh3.googleusercontent.com/d/1tLgfhnTJ7WOBH4a3eDCby-48KD1iGgOj" alt="炫辰" class="w-14 h-14 rounded-full object-cover border border-slate-700" onerror="this.onerror=null; this.src='1000046934.png';"> <span>炫辰 劇場 - 當主管拋出一個模糊的概念</span>
             </div>
             <p class="text-slate-300 leading-relaxed text-sm">
-              「主管常丟一句『我要做那個定時自動關閉的睡眠模式』，剩下的就要你自己通靈寫出 PRD、User Journey，甚至畫出系統流程邏輯。看你抓頭髮就快禿了。教你這一招，**橫向流程設計法**，讓 AI 先幫你跑 Happy Path 的用戶旅程，再轉成 PRD，最後自動產出極端情境 Edge Cases。你只要審查就好。」
+              「<span class="text-violet-400">威廉</span>常丟一句『我要做這個、跟做那個』，剩下的就要你自己通靈寫出 PRD、User Journey，甚至畫出系統流程邏輯。看你抓頭髮就快禿了。教你這一招，**橫向流程設計法**，讓 AI 先幫你跑 Happy Path 的用戶旅程，再轉成 PRD，最後自動產出極端情境 Edge Cases。你只要審查就好。」
             </p>
           </div>
 
@@ -343,17 +343,17 @@
                 </button>
                 <span class="hidden">=GEMINI("You are a strict QA Director and Senior Engineer. Review the designed Flow and System Logic to identify any hidden flaws, blind spots, or edge cases (e.g., network timeout, empty states, maximum limits).
 
-[Output Requirements]:
-1. List 3-4 potential 'Process Flaws or Vulnerabilities' (流程漏洞).
-2. For each flaw, provide a concrete 'Solution Suggestion' (解決建議).
-3. You MUST reply in Traditional Chinese (繁體中文) in a structured manner.",D2</span>
+				[Output Requirements]:
+				1. List 3-4 potential 'Process Flaws or Vulnerabilities' (流程漏洞).
+				2. For each flaw, provide a concrete 'Solution Suggestion' (解決建議).
+				3. You MUST reply in Traditional Chinese (繁體中文) in a structured manner.",D2</span>
               </div>
               <pre><code class="text-emerald-400">=GEMINI</code>(<span class="text-yellow-300">"You are a strict QA Director and Senior Engineer. Review the designed Flow and System Logic to identify any hidden flaws, blind spots, or edge cases (e.g., network timeout, empty states, maximum limits).
 
-[Output Requirements]:
-1. List 3-4 potential 'Process Flaws or Vulnerabilities' (流程漏洞).
-2. For each flaw, provide a concrete 'Solution Suggestion' (解決建議).
-3. You MUST reply in Traditional Chinese (繁體中文) in a structured manner.",<span class="text-violet-400">D2"</span>)</pre>
+				[Output Requirements]:
+				1. List 3-4 potential 'Process Flaws or Vulnerabilities' (流程漏洞).
+				2. For each flaw, provide a concrete 'Solution Suggestion' (解決建議).
+				3. You MUST reply in Traditional Chinese (繁體中文) in a structured manner.",<span class="text-violet-400">D2"</span>)</pre>
             </div>
           </div>
 
@@ -421,15 +421,15 @@
                 </button>
                 <span class="hidden">=GEMINI("You are an executive assistant. Analyze the meeting minutes provided below and extract clear, actionable 'Action Items.
 
-【Output Requirements】:
-1. Extract actionable tasks only. Each task must start with an action verb.
-2. Use a numbered list (1., 2., 3.) without any intro or outro text.",B2))</span>
+				【Output Requirements】:
+				1. Extract actionable tasks only. Each task must start with an action verb.
+				2. Use a numbered list (1., 2., 3.) without any intro or outro text.",B2))</span>
               </div>
               <pre><code class="text-emerald-400">=GEMINI</code>(<span class="text-yellow-300">"You are an executive assistant. Analyze the meeting minutes provided below and extract clear, actionable 'Action Items.
 
-【Output Requirements】:
-1. Extract actionable tasks only. Each task must start with an action verb.
-2. Use a numbered list (1., 2., 3.) without any intro or outro text.",<span class="text-violet-400">B2</span>)</pre>
+				【Output Requirements】:
+				1. Extract actionable tasks only. Each task must start with an action verb.
+				2. Use a numbered list (1., 2., 3.) without any intro or outro text.",<span class="text-violet-400">B2</span>)</pre>
             </div>
           </div>
 
@@ -449,7 +449,7 @@
               <img src="https://lh3.googleusercontent.com/d/1tLgfhnTJ7WOBH4a3eDCby-48KD1iGgOj" alt="炫辰" class="w-14 h-14 rounded-full object-cover border border-slate-700" onerror="this.onerror=null; this.src='1000046934.png';"> <span>炫辰 劇場 - 體力活全部丟給 AI 是基本常識</span>
             </div>
             <p class="text-slate-300 leading-relaxed text-sm">
-              「寫 50 個測試案例，每次都要在那邊重複複製貼上『步驟一：點擊按鈕、步驟二：輸入數值』對吧？手指累，大腦更累。在試算表裡，我們只需把『測試範圍、目的、備註』丟給 AI，讓它幫我們一口氣橫向發想出具體的功能點，以及對應的正負向測試案例情境。別用蠻力。」
+              「寫測試案例，很常忽略一些測試細節，導致測試不全面，在試算表裡，我們只需把『測試範圍、目的、備註』丟給 AI，讓它幫我們一口氣橫向發想出具體的功能點，以及對應的正負向測試案例情境。不只能具體設計出專案測項，當你在與工程師對焦測試問題時，顯得更專業，溝通更加分。」
             </p>
           </div>
 
@@ -488,7 +488,7 @@
               <i class="fa-solid fa-code text-indigo-400"></i> 2.Gemini 公式密技 (E2 測試情境發想)
             </h3>
             <p class="text-sm text-slate-400">
-              在 E2 儲存格中輸入以下公式，它會綜合參考功能點與您的備註，自動列出必須測試的正向情境（正常操作）與負向情境（防呆與系統阻擋）：
+              在 E2 儲存格中輸入以下公式，它會綜合參考功能點與你的備註，自動列出必須測試的正向情境（正常操作）與負向情境（防呆與系統阻擋）：
             </p>
             <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-sm overflow-x-auto leading-relaxed border border-slate-800">
               <div class="absolute right-4 top-4">
@@ -523,7 +523,7 @@
         <div id="copywrite-tab" class="tab-content hidden space-y-8 animate-fade-in">
           <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800">
             <div class="flex items-center space-x-3 text-indigo-400 font-bold mb-3">
-              <img src="https://lh3.googleusercontent.com/d/1tLgfhnTJ7WOBH4a3eDCby-48KD1iGgOj" alt="炫辰" class="w-14 h-14 rounded-full object-cover border border-slate-700" onerror="this.onerror=null; this.src='1000046934.png';"> <span>炫辰 劇場 - 讓全世界最新的趨勢資訊自動流進你的表格</span>
+              <img src="https://lh3.googleusercontent.com/d/1tLgfhnTJ7WOBH4a3eDCby-48KD1iGgOj" alt="炫辰" class="w-14 h-14 rounded-full object-cover border border-slate-700" onerror="this.onerror=null; this.src='1000046934.png';"> <span>炫辰 劇場 - 讓全世界開放性的網頁資訊自動流進你的表格</span>
             </div>
             <p class="text-slate-300 leading-relaxed text-sm">
               「很多人知道可以叫 AI 寫文案，但不知道 AI 的靈感可以來自『自動爬蟲』。在 A2 貼上網址，B2 就會自動抓出網頁的開放性資訊，接著讓 Gemini 參考它，來寫你指定的社群文案。完美的 RAG 輕量化辦公室實踐！」
@@ -563,7 +563,7 @@
               <i class="fa-solid fa-code text-indigo-400"></i> 2.Gemini 公式密技 (D2 文案自動撰寫)
             </h3>
             <p class="text-sm text-slate-400">
-              在 D2 儲存格中輸入以下公式，Gemini 會將爬到的網站描述（B2）作為當前參考背景，並精準執行您 C2 的指令任務：
+              在 D2 儲存格中輸入以下公式，Gemini 會將爬到的網站描述（B2）作為當前參考背景，並精準執行你 C2 的指令任務：
             </p>
             <div class="relative bg-slate-900 text-slate-100 rounded-xl p-5 font-mono text-sm overflow-x-auto leading-relaxed border border-slate-800">
               <div class="absolute right-4 top-4">
@@ -572,15 +572,15 @@
                 </button>
                 <span class="hidden">=GEMINI("You are an editor at a fortune-telling website, responsible for writing copy related to fortune-telling, astrology, numerology, Bazi (Four Pillars of Destiny), Zi Wei Dou Shu (Purple Star Astrology), daily horoscopes, annual horoscopes, compatibility analysis, love, luck, names, tarot cards, career fortune, past life rebirth, divination, and online courses. 
 				
-Tone: Professional, friendly, and human; avoid excessive humor or being overly aggressive. 
-Output: You will incorporate personal life experiences, writing 12-24 character texts using Traditional Chinese and Taiwanese vocabulary. 
-Based on B2 keywords and C2 style, you will write promotional copy including emojis and tags.",B2:C2)</span>
+				Tone: Professional, friendly, and human; avoid excessive humor or being overly aggressive. 
+				Output: You will incorporate personal life experiences, writing 12-24 character texts using Traditional Chinese and Taiwanese vocabulary. 
+				Based on B2 keywords and C2 style, you will write promotional copy including emojis and tags.",B2:C2)</span>
               </div>
              <pre><code class="text-emerald-400">=GEMINI</code>(<span class="text-yellow-300">"You are an editor at a fortune-telling website, responsible for writing copy related to  fortune-telling, astrology, numerology, Bazi (Four Pillars of Destiny), Zi Wei Dou Shu (Purple Star Astrology), daily horoscopes, annual horoscopes, compatibility analysis, love, luck, names, tarot cards, career fortune, past life rebirth, divination, and online courses. 
 			  
-Tone: Professional, friendly, and human; avoid excessive humor or being overly aggressive. 
-Output: You will incorporate personal life experiences, writing 12-24 character texts using Traditional Chinese and Taiwanese vocabulary. 
-Based on B2 keywords and C2 style, you will write promotional copy including emojis and tags.",<span class="text-violet-400">B2:C2</span>)</pre>
+			Tone: Professional, friendly, and human; avoid excessive humor or being overly aggressive. 
+			Output: You will incorporate personal life experiences, writing 12-24 character texts using Traditional Chinese and Taiwanese vocabulary. 
+			Based on B2 keywords and C2 style, you will write promotional copy including emojis and tags.",<span class="text-violet-400">B2:C2</span>)</pre>
             </div>
           </div>
 
@@ -689,7 +689,7 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
                   <div id="cell-c2" class="col-span-3 px-3 py-1 font-medium whitespace-pre-wrap leading-relaxed border-slate-800">需考慮電話撥入或使用者手動暫停等極端情境</div>
                   <div id="cell-d2" class="col-span-3 px-3 py-2 font-mono text-slate-500 italic flex items-center justify-center text-center">
                     <div>
-                      <p class="mb-2">等待您點擊「執行 AI 橫向生成」...</p>
+                      <p class="mb-2">等待你點擊「執行 AI 橫向生成」...</p>
                       <span class="text-[12px] bg-slate-950 px-2 py-1 rounded border border-slate-800 text-slate-500 font-sans">Formula: =GEMINI(...)</span>
                     </div>
                   </div>
@@ -748,7 +748,7 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
 		  
           <div class="flex items-start space-x-3 justify-end">
             <div class="bg-violet-600 text-white p-3.5 rounded-2xl rounded-tr-none text-sm leading-relaxed shadow-md max-w-xl">
-              「哼，總算不是只會把 AI 當聊天機器了。走吧，晚上下班一起吃飯，我請客。」
+              「哼，總算不是只會把 AI 當聊天機器了。走吧，下班一起吃飯，我請客。」
             </div>
             <img src="https://lh3.googleusercontent.com/d/1tLgfhnTJ7WOBH4a3eDCby-48KD1iGgOj" alt="炫辰" class="w-24 h-24 rounded-full object-cover border border-slate-700 flex-shrink-0" onerror="this.onerror=null; this.src='1000046934.png';">
           </div>
@@ -767,7 +767,7 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
   <section id="core-concept" class="py-16 bg-slate-900/40 border-b border-slate-900 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center mb-12">
-        <h2 class="text-3xl font-black mb-4">🫧 新單元，籌備中 🫧</h2>
+        <h2 class="text-3xl font-black mb-4">🫧 敬請期待 🫧</h2>
         <p class="text-indigo-300/80 max-w-2xl mx-auto mb-8 text-sm sm:text-base leading-relaxed">
 		這次的「Google Gemini × Google Sheets」教學，其實來自於我在日常工作中的實際摸索與應用的整理，不是一開始就完整設計好的方法。
 		關於 AI 在職場中的更多應用場景，目前也仍在持續探索中，如果你有一些想法，歡迎與我分享，讓我們一起為提升工作職能而努力吧！。</p>
@@ -923,7 +923,7 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
         c3.className = `${data.colWidths[2]} px-3 py-2 font-mono text-slate-500 italic flex items-center justify-center text-center border-slate-800`;
         c3.innerHTML = `
           <div>
-            <p class="mb-2">等待您點擊「執行 AI 橫向生成」...</p>
+            <p class="mb-2">等待你點擊「執行 AI 橫向生成」...</p>
             <span class="text-[12px] bg-slate-950 px-2 py-1 rounded border border-slate-800 text-slate-500 font-sans">Formula: =GEMINI(...)</span>
           </div>
         `;
@@ -936,7 +936,7 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
         c4.className = `${data.colWidths[3]} px-3 py-2 font-mono text-slate-500 italic flex items-center justify-center text-center border-slate-800`;
         c4.innerHTML = `
           <div>
-            <p class="mb-2">等待您點擊「執行 AI 橫向生成」...</p>
+            <p class="mb-2">等待你點擊「執行 AI 橫向生成」...</p>
             <span class="text-[12px] bg-slate-950 px-2 py-1 rounded border border-slate-800 text-slate-500 font-sans">Formula: =GEMINI(...)</span>
           </div>
         `;
@@ -983,7 +983,7 @@ Based on B2 keywords and C2 style, you will write promotional copy including emo
         if (theme === 'meeting') {
           outHtml += `<strong>【AI 依據 B 欄直接生成行動清單】</strong>\n\n`;
           if (val2.indexOf("恩佑") === -1 && val2.length > 10) {
-             outHtml += `1. 萃取客製化會議細節...（依據您輸入的內容生成）\n2. 建立具體可執行的行動任務方案。`;
+             outHtml += `1. 萃取客製化會議細節...（依據你輸入的內容生成）\n2. 建立具體可執行的行動任務方案。`;
           } else {
              outHtml += data.output;
           }
